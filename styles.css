@@ -7,33 +7,45 @@
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    position: fixed;
-}
-
-.languages { 
-    margin: 0 2px;
-    color: #0c5aceec;
     text-decoration: none;
-}
-.languages a:hover {
-    text-decoration: underline;
+    margin: 0;
 }
 
-#footer {
-    background-color: #f2f2f2;
-    padding: 10px;
+
+.footer {
+    display:flex;
+    background-color: #5a5a5a;
+    padding: 0px;
     text-align: center;
+    justify-content: space-between;
 }
 
-#footer a {
+.footer a {
     margin: 0 10px;
-    color: #70757a;
+    color: #c2c6c9;
     text-decoration: none;
 }
 
-#footer a:hover {
+.footer a:hover {
     text-decoration: underline;
 
+}
+
+.rightside,.leftside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rightside,.leftside{
+    margin-bottom: 5px;
+    color: #c2c6c9;
+    text-decoration: none;
+} 
+.leftside a:hover, .rightside a:hover{
+    text-decoration: underline;
+}
+.rightside{
+    margin-left: auto;
 }
 .logo{
     width: 300px;
@@ -52,15 +64,96 @@
     min-height: 100%;
   }
   
-  #body {
+#body {
     margin: 0;
     padding-bottom: 100px;
   }
   
-  #footer {
+.footer {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px; 
   }
 
+#languages {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+#languages a { 
+    margin: 0 2px;
+    color: #0c5aceec;
+    text-decoration: none;
+}
+
+#languages a:hover {
+    text-decoration: underline;
+}
+.country {
+    color: #c2c6c9;
+    padding: 5px 30px;
+    margin-right: auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.search-input {
+    width: 500px;
+    height: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-buttons {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    
+}
+
+.google-search-button,
+.feeling-lucky-button {
+    display: inline-block;
+    height: 40px;
+    padding: 0 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #b6bcc2;
+    color: #5f6368;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 30px;
+}
+
+.google-search-button:hover,
+.feeling-lucky-button:hover {
+    background-color: #f2f2f2;
+}
+
+.downpart {
+display: flex;
+flex-direction: row;
+border-bottom: 0.5px solid #b6bcc2;
+border-top: 0.5px solid #b6bcc2;
+border-top: -10px;
+padding: 20px
+}
+
+.googlesign {
+    margin-top: 40px;
+}
